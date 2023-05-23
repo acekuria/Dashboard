@@ -348,9 +348,26 @@ template {
   display: none;
 }
 
+* {
+  list-style-type: none;
+}
+
+:root {
+  
+  
+}
+
+
+
+
 body {
   height: 100vh;
   width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #c7d2fe;
+
+  
 }
 
 .container {
@@ -358,20 +375,64 @@ body {
   width: 100%;
   
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  
+  grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
+ 
 }
 
 #header {
   border: 1px solid black;
   grid-column: 2/ -1;
-
+  
 }
 
 .sidebar {
   border: 1px solid red;
   grid-row: 1/4;
+  background-color: #0ea5e9;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px 
+  
 }
+
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.dashboard svg {
+  width: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+ul li {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  
+  
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
 
 .projects {
   border: 1px solid green;
