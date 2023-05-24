@@ -353,7 +353,8 @@ template {
 }
 
 :root {
-  
+  --main-bg-color: #0ea5e9;
+  --second-bg-color: #c7d2fe;
   
 }
 
@@ -365,8 +366,8 @@ body {
   width: 100vw;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Poppins', sans-serif;
-  background-color: #c7d2fe;
-
+  background-color: var(--second-bg-color);
+  min-width: 1044px;
   
 }
 
@@ -383,23 +384,80 @@ body {
 #header {
   border: 1px solid black;
   grid-column: 2/ -1;
-  
+  display: grid;
+  grid-template-columns: 1fr .5fr;
+  grid-template-rows: .8fr 1fr;
+  background-color: white;
 }
 
 #header svg {
-  width: 2rem;
+  width: 2.3rem;
 }
 
-header div {
+header > div {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
+
+[type='search'] {
+  border-radius: 10px;
+  font-size: 1.3rem;
+  height: 40px;
+}
+
+.second-cell {
+  gap: 20px;
+}
+
+header h4 {
+  font-size: 1.6rem;
+}
+.first-cell, .second-cell {
+  background-color: var(--second-bg-color);
+}
+
+header .second-cell img{
+  border-radius: 50%;
+  width: 4rem;
+}
+
+header .third-cell {
+  display: flex;
+  gap: 40px;
+ 
+}
+
+header .third-cell img {
+  border-radius: 50%;
+  width: 6rem;
+}
+
+header .third-cell p {
+ margin-bottom: -15px;
+}
+
+header .fourth-cell {
+  display: flex;
+  gap: 20px;
+}
+
+header button {
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: var(--main-bg-color);
+  padding: 10px;
+ 
+}
+  
 
 
 .sidebar {
   border: 1px solid red;
   grid-row: 1/4;
-  background-color: #0ea5e9;
+  background-color: var(--main-bg-color);
   color: white;
   padding: 10px;
   display: flex;
@@ -452,8 +510,15 @@ ul li a {
 .projects {
   border: 1px solid green;
   grid-column: 2/4;
-  grid-row: 2/ 4
+  grid-row: 2/ 4;
+  padding: 10px;
 }
+
+.projects-grid {
+  display: grid;
+
+}
+
 
 .announcements{
   border:1px solid orange ;
