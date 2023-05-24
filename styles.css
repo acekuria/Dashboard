@@ -549,13 +549,32 @@ ul li a {
   
 }
 
-
-
-
-.announcements{
+.announcements, .trending{
   border:1px solid orange ;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.announcement-container, .trending-container {
+  background-color: white;
+  height: 250px;
+  width: clamp(200px, 80%, 400px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.first-announcement {
+  border-bottom: 3px dashed black;
 }
 
 .trending {
   border: 1px solid slateblue;
+  padding: 10px;
+  text-align: center;
 }
