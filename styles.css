@@ -375,8 +375,9 @@ body {
   width: 100%;
   
   display: grid;
-  grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
- 
+  grid-template-columns: 1.5fr 2fr 2fr 1.7fr;
+  grid-template-rows: 0.8fr 1.5fr 1.5fr;
+  /* grid-auto-rows: ; */
 }
 
 #header {
@@ -384,6 +385,16 @@ body {
   grid-column: 2/ -1;
   
 }
+
+#header svg {
+  width: 2rem;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
 
 .sidebar {
   border: 1px solid red;
@@ -399,15 +410,19 @@ body {
 }
 
 
-.dashboard {
+.dashboard, ul li{
   display: flex;
-  justify-content: center;
   align-items: center;
-
+  gap: 10px;
 }
 
 .dashboard svg {
   width: 3rem;
+}
+
+ul li svg {
+  width: 2rem;
+
 }
 
 h1 {
