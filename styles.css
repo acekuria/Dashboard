@@ -382,7 +382,7 @@ body {
 }
 
 #header {
-  border: 1px solid black;
+ 
   grid-column: 2/ -1;
   display: grid;
   grid-template-columns: 1fr .5fr;
@@ -455,7 +455,7 @@ header button {
 
 
 .sidebar {
-  border: 1px solid red;
+  
   grid-row: 1/4;
   background-color: var(--main-bg-color);
   color: white;
@@ -508,7 +508,7 @@ ul li a {
 
 
 .projects {
-  border: 1px solid green;
+  
   grid-column: 2/4;
   grid-row: 2/ 4;
   padding: 10px;
@@ -517,6 +517,7 @@ ul li a {
 
 .projects h2 {
   font-size: 1.5rem;
+  margin-left: 10px;
 }
 
 .projects-grid {
@@ -550,7 +551,7 @@ ul li a {
 }
 
 .announcements, .trending{
-  border:1px solid orange ;
+ 
   padding: 10px;
   text-align: center;
   display: flex;
@@ -569,12 +570,30 @@ ul li a {
   padding: 10px;
 }
 
+.trending-container {
+  justify-content: center;
+  height: 200px
+}
+
 .first-announcement {
   border-bottom: 3px dashed black;
 }
 
 .trending {
-  border: 1px solid slateblue;
+  
   padding: 10px;
-  text-align: center;
+  
+}
+
+.trending-container img{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.trending-container div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
 }
